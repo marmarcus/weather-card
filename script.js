@@ -21,7 +21,7 @@ async function getWeather(city){
 
     var getLetter = data.weather[0].icon;
 
-    if(getLetter.endsWith('d')){
+    if(getLetter.endsWith('n')){
         document.body.style.background = '#222';
         document.querySelector(".card").style.boxShadow = '0 0 5px 5px #465441'
     }
