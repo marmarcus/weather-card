@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial , sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(135,205,255,0.58) 0%, rgba(203, 251, 255, 0.619) 50%, rgba(135,205,255,0.58) 100%);
+}
+
+.card {
+    width: 90%;
+    max-width: 450px;
+    background: linear-gradient(135deg, #5ac66c 0%, #72f2b8 100%);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 0 4px 4px rgb(106, 211, 213);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    color: #222;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    height: 18px;
+    width: 18px;
+    opacity: 50%;
+}
+
+.weather {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.29);
+}
+
+.weather h1 {
+    max-width: 298px;
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+        50% {
+        transform: translateY(-5px);
+    }
+}
+
+.icons {
+    width: 25%;
+    margin-left: -5px;
+    animation: floatUpDown 4s infinite; /* Adjust duration as needed */
+
+}
+
+.weather h2 {
+    margin-top: 10px;
+    font-size: 98px;
+    color: rgba(255,255,255,.95);
+}
+
+.weather .temp {
+    display: flex;
+}
+
+.wind-humid {
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: grid;
+    justify-content: center;
+}
+
+.col1, .col2 {
+    display: flex;
+    width: 50%;
+}
+
+.col1 img, .col2 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    opacity: 75%;
+}
+
+.value {
+    display: flex;
+    font-size: 28px;
+    margin: 10px 2px;
+}
+
+.value p:nth-child(2) {
+    font-size: 18px;
+}
