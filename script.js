@@ -23,7 +23,11 @@ async function getWeather(city){
 
     if(getLetter.endsWith('n')){
         document.body.style.background = '#222';
-        document.querySelector(".card").style.boxShadow = '0 0 5px 5px #465441'
+        document.querySelector(".card").style.boxShadow = '0 0 5px 5px #465441';
+    }
+    else{
+        document.body.style.background = 'linear-gradient(90deg, rgba(135,205,255,0.58) 0%, rgba(203, 251, 255, 0.619) 50%, rgba(135,205,255,0.58) 100%)';
+        document.querySelector(".card").style.boxShadow = '0 0 4px 4px rgb(106, 211, 213)';
     }
 }
 
