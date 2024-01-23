@@ -21,6 +21,10 @@ body {
     box-shadow: 0 0 4px 4px rgb(106, 211, 213);
 }
 
+.card:hover {
+    margin: 95px auto 0;
+}
+
 .search {
     width: 100%;
     display: flex;
