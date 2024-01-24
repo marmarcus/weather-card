@@ -14,7 +14,7 @@ body {
     max-width: 450px;
     background: linear-gradient(135deg, #5ac66c 0%, #72f2b8 100%);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 140px auto 0;
     border-radius: 20px;
     padding: 30px 25px;
     text-align: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .card:hover {
-    margin: 95px auto 0;
+    margin: 135px auto 0;
 }
 
 .search {
@@ -104,7 +104,7 @@ body {
 .wind-humid {
     width: 100%;
     margin-top: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: grid;
     justify-content: center;
@@ -130,4 +130,19 @@ body {
 
 .value p:nth-child(2) {
     font-size: 18px;
+}
+
+.desc {
+    display: flex;
+    width: 100%;
+}
+
+.desc div {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.humid {
+    margin: 0 10px 0 -35px;
 }
