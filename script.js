@@ -3,7 +3,11 @@ var btn = document.querySelector("button");
 
 btn.addEventListener("click", ()=>{
     getWeather(entry.value);
-})
+});
+
+entry.addEventListener('keypress', ()=>{
+    getWeather(entry.value);
+});
 
 const apiKey = "119baa915fa39798f96861183f68e491";
 const apiCall = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
